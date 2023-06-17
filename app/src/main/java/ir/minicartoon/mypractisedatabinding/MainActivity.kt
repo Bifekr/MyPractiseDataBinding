@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import ir.minicartoon.mypractisedatabinding.databinding.ActivityMainBinding
 import ir.minicartoon.mypractisedatabinding.mvvmsample1.MainMvvm1Activity
 import ir.minicartoon.mypractisedatabinding.mvvmsample2.MainMvvm2Activity
+import ir.minicartoon.mypractisedatabinding.notedatabindmvvm.NoteMainActivity
 import ir.minicartoon.mypractisedatabinding.sample1.Sample1Activity
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,Sample1Activity::class.java))
         }
         binding.button2.setOnClickListener{
-            startActivity(Intent(this, MainMvvm2Activity::class.java))
+            startActivity(Intent(this, NoteMainActivity::class.java))
 
         }
     }

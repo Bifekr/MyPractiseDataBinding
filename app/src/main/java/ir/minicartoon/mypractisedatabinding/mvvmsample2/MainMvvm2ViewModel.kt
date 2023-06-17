@@ -3,7 +3,7 @@ package ir.minicartoon.mypractisedatabinding.mvvmsample2
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class Mvvm2ViewModel: ViewModel() {
+class MainMvvm2ViewModel: ViewModel() {
     var lst=MutableLiveData<ArrayList<Blog>>()
     private var newList=arrayListOf<Blog>()
 

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyPractiseDataBinding"
         tools:targetApi="31">
         <activity
+            android:name=".notedatabindmvvm.NoteMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".mvvmsample2.MainMvvm2Activity"
             android:exported="false" />
         <activity

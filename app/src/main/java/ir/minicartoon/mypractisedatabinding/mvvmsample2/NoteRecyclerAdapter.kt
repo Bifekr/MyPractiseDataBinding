@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -15,7 +14,7 @@ import ir.minicartoon.mypractisedatabinding.R
 
 
 class NoteRecyclerAdapter(
-    val viewModel: Mvvm2ViewModel,
+    val viewModel: MainMvvm2ViewModel,
     val arrayList: ArrayList<Blog>,
     private var context: Context
 ) :

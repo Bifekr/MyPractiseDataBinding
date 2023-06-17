@@ -11,12 +11,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ir.minicartoon.mypractisedatabinding.MainViewModel2Factory
-import ir.minicartoon.mypractisedatabinding.MainViewModelFactory
 import ir.minicartoon.mypractisedatabinding.R
 
 class MainMvvm2Activity : AppCompatActivity() {
     private var viewManager = LinearLayoutManager(this)
-    private lateinit var viewModel: Mvvm2ViewModel
+    private lateinit var viewModel: MainMvvm2ViewModel
     private lateinit var mainrecycler: RecyclerView
     private lateinit var but: Button
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +25,7 @@ class MainMvvm2Activity : AppCompatActivity() {
         mainrecycler = findViewById(R.id.recycler)
         val application = requireNotNull(this).application
         val factory = MainViewModel2Factory()
-        viewModel = ViewModelProvider(this, factory)[Mvvm2ViewModel::class.java]
+        viewModel = ViewModelProvider(this, factory)[MainMvvm2ViewModel::class.java]
         but = findViewById(R.id.button)
         but.setOnClickListener {
             addData()
